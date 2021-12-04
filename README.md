@@ -1,2 +1,2 @@
 # portfolio
- Main page
+ This repo is the main page of my website
