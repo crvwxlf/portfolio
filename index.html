@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICON HEADERS -->
+    <link rel="shortcut icon" href="/ico/favicon.ico" type="image/x-icon">
+    <!-- END ICON HEADER -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Mon portfolio</title>
+</head>
+
+<body>
+    <header id="accueil">
+        <h1>Lucas Haller</h1>
+        <h2><em>Dévellopeur Web</em></h2>
+        <figure>
+            <img id="logo" src="./img/wolf2.png" alt="Wolf Head" title="Wolf head Logo" />
+        </figure>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h3>Bienvenue</h3>
+            <p>Bonjour je m'appelle Lucas, je suis développeur, je code dans divers language,<br />
+                notament en <em>JavaScript</em> et <em>Python</em>.<br />
+                Hâte de partager mes futurs projets avec vous :)
+            </p>
+        </section>
+        <section>
+            <h3>Mes 3 pilliers de créations</h3>
+            <div>
+                <h4>Simple</h4>
+                <p>Rien de meilleur q'une interface simple et
+                    ergonomique aux goût du jour.
+                </p>
+            </div>
+            <div>
+                <h4>Fiable</h4>
+                <p>Il est primmordiale qu'avec l'air du tout numérique
+                    on doir penser a l'aspect sécurité et intégrité de l'information.
+                </p>
+            </div>
+            <div>
+                <h4>Rapide</h4>
+                <p>Dans l'informatique actuelle il est important qu'un logiciel soit rapide
+                    pour le meilleur de l'utilisateur.
+                </p>
+            </div>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <small>Vous voulez plus d'information ?<br>Contactez-moi :)</small>
+            <button class="contactBtn">Contact</button>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright"></p>
+    </footer>
+    <script>
+        document.querySelector('.contactBtn').addEventListener('click', () => {
+            window.location = String.fromCharCode(109, 97, 105, 108, 116, 111, 58, 104, 97, 108, 108, 101, 114, 108, 117, 99, 97, 115, 64, 111, 117, 116, 108, 111, 111, 107, 46, 99, 111, 109);
+        });
+    </script>
+    <script>
+        document.querySelector('.copyright').innerHTML = `${new Date().getFullYear()} &copy; exemple.com`;
+    </script>
+</body>
+
+</html>
